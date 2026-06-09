@@ -17,3 +17,9 @@ def add_subject():
         subject_object = Subject(item['name'], item['day_time'], item['target'])
     subject_object.get_info()
     
+def show_all():
+    data = load_data()
+    for item in data:
+        subject_object = Subject(item['name'], item['day_time'], item['target'])
+        subject_object.get_info()
+    

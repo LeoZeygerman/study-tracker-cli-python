@@ -1,4 +1,4 @@
-from subject_logic import add_subject
+from subject_logic import add_subject, show_all
 def main_menu():
     while True:
         try:
@@ -11,6 +11,9 @@ def main_menu():
             
             if choice == 1:
                 add_subject()
+                
+            if choice == 2:
+                show_all()
             
         except ValueError:
             print('Ошибка при вводе!')

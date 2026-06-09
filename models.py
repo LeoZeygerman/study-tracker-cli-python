@@ -5,5 +5,5 @@ class Subject:
         self.target = target
         
     def get_info(self):
-        print(f'Предмет: {self.name}\nВремя в день: {self.day_time}\nЦель: {self.target}')
+        print(f'Предмет: {self.name} | Время в день: {self.day_time}\nЦель: {self.target}')
         
