@@ -5,6 +5,12 @@ from study_menu import study_menu
 data = load_data()
 
 if len(data) == 0:
-    main_menu()
+    current = 'main'
 else:
-    study_menu()
+    current = 'study'
+
+while True:
+    if current == 'main':
+        current = main_menu()
+    elif current == 'study':
+        current = study_menu()

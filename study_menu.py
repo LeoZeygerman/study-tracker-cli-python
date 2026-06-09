@@ -7,7 +7,8 @@ def study_menu():
             print('2.Отметить выполнение')
             print('3.Изменить предмет')
             print('4.Удалить предмет')
-            print('5.Выход')
+            print('5.Выход в главное меню')
+            print('6.Выход')
             choice = int(input('Ваш выбор: '))
             
             if choice == 1:
@@ -23,6 +24,9 @@ def study_menu():
                 delete_subject()
                 
             if choice == 5:
+                return 'main'
+                
+            if choice == 6:
                 exit()
             
         except ValueError:
