@@ -1,4 +1,5 @@
 from subject_logic import add_subject, show_all
+from study_menu import study_menu
 def main_menu():
     while True:
         try:
@@ -16,7 +17,7 @@ def main_menu():
                 show_all()
                 
             if choice == 3:
-                pass
+                study_menu()
             
             if choice == 4:
                 exit()

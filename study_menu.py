@@ -1,4 +1,4 @@
-
+from subject_logic import show_all, completed
 
 def study_menu():
     while True:
@@ -8,5 +8,12 @@ def study_menu():
             print('3.Изменить предмет')
             print('4.Выход')
             choice = int(input('Ваш выбор: '))
+            
+            if choice == 1:
+                show_all()
+                
+            if choice == 2:
+                completed()
+            
         except ValueError:
             print('Ошибка при вводе!')
