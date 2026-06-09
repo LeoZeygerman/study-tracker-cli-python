@@ -4,7 +4,7 @@ def load_data():
     try:
         with open('data/subject.json', 'r') as f:
             return json.load(f)
-    except ValueError:
+    except:
         return []
     
 def save_data(data):

@@ -1,3 +1,4 @@
+from subject_logic import add_subject
 def main_menu():
     while True:
         try:
@@ -9,7 +10,7 @@ def main_menu():
             choice = int(input('Ваш выбор: '))
             
             if choice == 1:
-                pass
+                add_subject()
             
         except ValueError:
             print('Ошибка при вводе!')
