@@ -14,6 +14,12 @@ def main_menu():
                 
             if choice == 2:
                 show_all()
+                
+            if choice == 3:
+                pass
+            
+            if choice == 4:
+                exit()
             
         except ValueError:
             print('Ошибка при вводе!')
