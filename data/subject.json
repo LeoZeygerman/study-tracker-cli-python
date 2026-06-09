@@ -1,7 +1,14 @@
 [
     {
-        "name": "Vio",
+        "name": "Bio",
         "day_time": 30,
+        "target": "Pro",
+        "last_complete": "2026-06-09",
+        "complete": "Отмечен"
+    },
+    {
+        "name": "Russian",
+        "day_time": 60,
         "target": "Pro",
         "last_complete": "2026-06-09",
         "complete": "Отмечен"

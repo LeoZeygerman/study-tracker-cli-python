@@ -11,7 +11,7 @@ def add_subject():
         'day_time': day_time,
         'target': target,
         'last_complete': None,
-        'complete': None
+        'complete': 'Не отмечен'
     }
     data.append(subject)
     save_data(data)
@@ -24,12 +24,20 @@ def show_all():
     for item in data:
         subject_object = Subject(item['name'], item['day_time'], item['target'], item['last_complete'], item['complete'])
         subject_object.get_info()
+        
+def special_show():
+    data = load_data()
+    for item in data:
+        subject_object = Subject(item['name'], item['day_time'], item['target'], item['last_complete'], item['complete'])
+        subject_object.full_show()
     
 def completed():
     data = load_data()
     choice = input('Введите название предмета, который хотите отметить: ')
+    word = None
     for item in data:
-        if choice.lower() == item['name'].lower(): 
+        word = item['name']
+        if choice.lower() == word.lower(): 
             subject_object = Subject(item['name'], item['day_time'], item['target'], item['last_complete'], item['complete'])
             subject_object.completed()
             item['last_complete'] = subject_object.last_completed
@@ -39,3 +47,4 @@ def completed():
             item['last_complete'] = subject_object.last_completed
             item['complete'] = subject_object.complete
             save_data(data)
+            subject_object.full_show()

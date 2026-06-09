@@ -1,4 +1,4 @@
-from subject_logic import show_all, completed
+from subject_logic import show_all, completed, special_show
 
 def study_menu():
     while True:
@@ -10,7 +10,7 @@ def study_menu():
             choice = int(input('Ваш выбор: '))
             
             if choice == 1:
-                show_all()
+                special_show()
                 
             if choice == 2:
                 completed()

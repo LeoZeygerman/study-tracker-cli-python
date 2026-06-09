@@ -30,3 +30,6 @@ class Subject:
             print(f'Предмет {self.complete}')
         else:
             print(f'Предмет {self.complete}!')
+            
+    def full_show(self):
+        print(f'Предмет: {self.name} | Время в день: {self.day_time}\nЦель: {self.target}\nСегодня предмет {self.complete}')
